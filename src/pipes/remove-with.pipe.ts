@@ -9,7 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 
 export class RemoveWithPipe implements PipeTransform {
-    transform(collection:Array<string>, object:Object) : any {
+    transform(collection:Array<string>, object:Object) : Array<string> {
         if(object === 'undefined') {
             return collection;
         }
